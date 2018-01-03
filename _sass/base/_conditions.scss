@@ -1,0 +1,44 @@
+$coral: linear-gradient(270deg, coral, #fff446, #15f0e5);
+
+// beziers
+$ease: cubic-bezier(.34,.01,.35,.98);
+$easy: cubic-bezier(1,0,0,1);
+
+
+//animations
+@keyframes gradient-move {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+//styles
+// div {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate3d(-50%,-50%,0);
+// }
+
+.rainbow-btn {
+  border-radius: 50em;
+  padding: 1em 3em;
+  line-height: 1.6em;
+  overflow: hidden;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-decoration: none;
+  transition: 0.3s $ease, opacity 0.5s;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 0px 0px 0px 2px rgba(black,0.3);
+  color: black;
+  font-size: 1.2em;
+  overflow: hidden;
+  animation: gradient-move 10s ease infinite;
+  &:hover {
+  	animation: gradient-move 10s ease infinite;
+  }
+}
