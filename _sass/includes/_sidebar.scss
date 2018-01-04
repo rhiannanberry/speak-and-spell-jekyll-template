@@ -45,6 +45,9 @@
       a{
         text-decoration: none;
         color: $color;
+        &:hover {
+          animation: rainbow-text 5s ease infinite;
+        }
       }
     }
   }
@@ -67,6 +70,9 @@
           color: $color-links;
           text-decoration: underline;
           font-weight: $links-title-weight;
+          &:hover {
+            animation: rainbow-text 5s ease infinite;
+          }
         }
       }
       .breakline{

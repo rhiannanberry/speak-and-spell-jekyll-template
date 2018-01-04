@@ -21,6 +21,9 @@
       a{
         color: $color-links;
         text-decoration: underline;
+        &:hover {
+          animation: rainbow-text 5s ease infinite;
+        }
       }
     }
   }

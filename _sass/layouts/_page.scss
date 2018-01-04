@@ -1,9 +1,28 @@
+// beziers
+$ease: cubic-bezier(.34,.01,.35,.98);
+$easy: cubic-bezier(1,0,0,1);
+
+
+//animations
+@keyframes rainbow-text {
+  0%{color:coral}
+  33%{color:#fff446}
+  66%{color:#15f0e5}
+  100%{color:coral}
+}
+
+
+
 .page{
   font-family: $font-family-primary;
   padding: 3%;
   a{
-    color: $color-links;
+    //color: $color-links;
+    color: #fff;
     text-decoration: underline;
+    &:hover {
+      animation: rainbow-text 5s ease infinite;
+    }
   }
   .title{
     h1{
