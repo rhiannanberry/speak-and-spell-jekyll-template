@@ -4,6 +4,7 @@ html,body{
   a{
     &:focus,&:active,&:hover{
       outline: none;
+      animation: rainbow-text 5s ease infinite;
     }
   }
 }

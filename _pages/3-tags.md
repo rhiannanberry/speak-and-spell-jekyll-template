@@ -9,7 +9,7 @@ ga_event: false
 icon: fa-tags
 
 # Enable / Disable this page in the main menu.
-menu: true
+menu: false
 
 # Does not change and does not remove 'script' variables
 script: [tags.js]

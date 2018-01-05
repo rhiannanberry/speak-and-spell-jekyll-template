@@ -27,9 +27,6 @@ $easy: cubic-bezier(1,0,0,1);
 
 
 .rainbow-btn {
-  //border-radius: 50em;
-  border-style: solid;
-  border-width: 2px;
   padding: 1em 3em;
   line-height: 1.6em;
   overflow: hidden;
@@ -37,20 +34,17 @@ $easy: cubic-bezier(1,0,0,1);
   font-weight: 600;
   letter-spacing: .02em;
   text-decoration: none;
-  transition-timing-function: $ease;
-  transition: opacity 0.5s, background-color 0.5s;
+  
   position: relative;
   display: inline-block;
+  box-shadow:inset 0px 0px 0px 1px;
   animation: rainbow-text 5s ease infinite, rainbow-border 5s ease infinite;
   font-size: 1.2em;
   overflow: hidden;
-  background: black;
+  transition: box-shadow .5s;
+  background: $background-color;
   &:hover {
-    
-  	animation: rainbow 5s ease infinite;
-    color:black;
-    border-color: black;
-    transition-timing-function: $ease;
-    transition: opacity 0.5s, background-color 0.5s, color 0.5s, border-color 0.5s;
+    transition: box-shadow .3s;
+    box-shadow:inset 0px 0px 0px 3px;
   }
 }
