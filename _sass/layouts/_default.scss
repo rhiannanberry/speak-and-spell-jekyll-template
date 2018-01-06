@@ -4,8 +4,8 @@ html,body{
   a{
     &:focus,&:active,&:hover{
       outline: none;
-      animation: rainbow-text 5s ease infinite;
     }
+    @include animate-hyperlink(.3s, 2s);
   }
 }
 .main{

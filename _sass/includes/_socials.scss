@@ -16,9 +16,7 @@
     }
     a{
       color: rgba($color-links, .9);
-      &:hover{
-        animation: rainbow-text 5s ease infinite;
-      }
+      @include animate-hyperlink(.5s, 3s);
       .icon{
         font-size: 2.3rem;
         @media (max-width: 768px) {

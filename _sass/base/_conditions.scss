@@ -11,6 +11,11 @@ $easy: cubic-bezier(1,0,0,1);
   100%{background-color:coral}
 }
 
+@keyframes rainbow-text-in {
+  0%{color:$color-links}
+  100%{color:coral}
+}
+
 @keyframes rainbow-text {
   0%{color:coral}
   33%{color:#fff446}
@@ -26,25 +31,25 @@ $easy: cubic-bezier(1,0,0,1);
 }
 
 
-.rainbow-btn {
-  padding: 1em 3em;
-  line-height: 1.6em;
-  overflow: hidden;
-  font-family: $font-family-primary;
-  font-weight: 600;
-  letter-spacing: .02em;
-  text-decoration: none;
+// .rainbow-btn {
+//   padding: 1em 3em;
+//   line-height: 1.6em;
+//   overflow: hidden;
+//   font-family: $font-family-primary;
+//   font-weight: 600;
+//   letter-spacing: .02em;
+//   text-decoration: none;
   
-  position: relative;
-  display: inline-block;
-  box-shadow:inset 0px 0px 0px 1px;
-  animation: rainbow-text 5s ease infinite, rainbow-border 5s ease infinite;
-  font-size: 1.2em;
-  overflow: hidden;
-  transition: box-shadow .5s;
-  background: $background-color;
-  &:hover {
-    transition: box-shadow .3s;
-    box-shadow:inset 0px 0px 0px 3px;
-  }
-}
+//   position: relative;
+//   display: inline-block;
+//   box-shadow:inset 0px 0px 0px 1px;
+//   animation: rainbow-text 5s ease infinite;
+//   font-size: 1.2em;
+//   overflow: hidden;
+//   transition: box-shadow .5s;
+//   background: $background-color;
+//   &:hover {
+//     transition: box-shadow .3s;
+//     box-shadow:inset 0px 0px 0px 3px;
+//   }
+// }

@@ -16,7 +16,7 @@ website:
   title: Typing
   description: Typing - A Theme for Jekyll
   launch: 2016
-  avatar: typing.svg
+  avatar: mecute3small.png
   metatag:
     google-site-verification:
     type: "WebSite"
@@ -32,7 +32,7 @@ website:
       id:  # tracking id, e.g. "UA-000000-01"
       events: true # Use: true | false . Events Google Analytics
   author:
-    image: typing.svg
+    image: mecute3small.png
   strings:
     sidebar:
       title: |

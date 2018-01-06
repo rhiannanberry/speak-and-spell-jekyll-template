@@ -30,3 +30,31 @@
     text-shadow: $top $left $blur $color;
   }
 }
+
+@mixin animate-hyperlink($transition-time, $animation-time) {
+  &:hover {
+    animation: rainbow-text-in $transition-time 0s 1, rainbow-text $animation-time $transition-time infinite;
+  }
+}
+
+@mixin animate-button($start-border, $end-border, $transition-time-in, $transition-time-out, $animation-time) {
+  -webkit-box-shadow:inset 0px 0px 0px $start-border;
+  box-shadow:inset 0px 0px 0px $start-border;
+  animation: rainbow-text $animation-time ease infinite;//, rainbow-border 5s ease infinite;
+  transition: box-shadow $transition-time-in;
+  &:hover{
+    transition: box-shadow $transition-time-out;
+    -webkit-box-shadow:inset 0px 0px 0px $end-border;
+    box-shadow:inset 0px 0px 0px $end-border;
+  }
+}
+
+@mixin animate-title($start-color, $transition-time, $animation-time) {
+  @keyframes transition-in {
+    0%{color:$start-color}
+    100%{color:coral}
+  }
+  &:hover {
+    animation: transition-in $transition-time 0s 1, rainbow-text $animation-time $transition-time infinite;
+  }
+}

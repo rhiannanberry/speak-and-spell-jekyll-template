@@ -3,11 +3,7 @@
   padding: 3%;
   a{
     color: $color-links;
-    color: #fff;
     text-decoration: underline;
-    &:hover {
-      animation: rainbow-text 5s ease infinite;
-    }
   }
   .readmode{
     position: fixed;

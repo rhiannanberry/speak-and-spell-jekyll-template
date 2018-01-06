@@ -15,16 +15,8 @@
       a{
         padding: 10px;
         background-color: $background-color;
-        -webkit-box-shadow:inset 0px 0px 0px 1px;
-        box-shadow:inset 0px 0px 0px 1px;
-        animation: rainbow-text 5s ease infinite, rainbow-border 5s ease infinite;
-        transition: box-shadow .5s;
         text-decoration: none;
-        &:hover{
-          transition: box-shadow .3s;
-          -webkit-box-shadow:inset 0px 0px 0px 3px;
-          box-shadow:inset 0px 0px 0px 3px;
-        }
+        @include animate-button(1px, 3px, .5s, .3s, 5s);
       }
     }
   }
