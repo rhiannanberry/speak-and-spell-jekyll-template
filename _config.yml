@@ -41,7 +41,7 @@ share_social:
 # Enable or disable icons on every website. Use:  true | false
 screen:
   icons:
-    enable: true
+    enable: false
 
 # Settings for the plugins in the _plugins folder.
 plugin:

@@ -6,9 +6,12 @@
     </a>
     </div>
   {% endif %}
+  {% include pieces/socials.html %}
+  {% if dbase.website.strings.sidebar.enable == true %}
   <div class="row header">
     <h2><a href="{{ site.url }}{{ site.baseurl }}/">{{ dbase.website.strings.sidebar.title }}</a></h2>
   </div>
+  {% endif %}
   <div class="row menu">
     <ul>
       <li>
@@ -23,6 +26,6 @@
         {% endif %}
       {% endfor %}
     </ul>
-    {% include pieces/socials.html %}
+    
   </div>
 </div>

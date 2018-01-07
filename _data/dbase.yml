@@ -35,6 +35,7 @@ website:
     image: mecute3small.png
   strings:
     sidebar:
+      enable: false
       title: |
         Hey, <br> I'm Typing.
       links:
@@ -86,7 +87,7 @@ userdata:
     username:
   # You can add at most 4 social. If you do not want 4, you can remove the block containing: title, id, icon, url.
   socials:
-    title: Follow Me!
+    title: 
     ga_event: true # Google Analytics Event (Hit). Usage: true | false
     links:
       - title: GitHub

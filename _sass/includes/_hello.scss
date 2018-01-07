@@ -4,15 +4,13 @@
   a{
     color: $color-links;
     text-decoration: underline;
-    //@include animate-hyperlink(.5s, 3s);
-    // font-weight: 800;
   }
   .rainbow-btn {
-    padding: 1em 3em;
+    padding: 10px;
     line-height: 1.6em;
     overflow: hidden;
-    font-family: $font-family-primary;
     font-weight: 600;
+    font-size: 1.2em;
     letter-spacing: .02em;
     text-decoration: none;
     @include animate-button(1px, 3px, .5s, .3s, 5s);
