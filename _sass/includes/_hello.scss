@@ -9,7 +9,7 @@
     padding: 10px;
     line-height: 1.6em;
     overflow: hidden;
-    font-weight: 600;
+    
     font-size: 1.2em;
     letter-spacing: .02em;
     text-decoration: none;
@@ -27,7 +27,6 @@
     }
   }
   .content{
-    padding: 2% 0%;
     .avatar{
       margin-right: 15px;
       @media (max-width: 768px) {
